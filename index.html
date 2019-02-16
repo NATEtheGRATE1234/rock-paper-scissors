@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	
+	<!-- Bootstrap Link -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<title>Rock Paper Scissors</title>
+	
+	<!-- Link to CSS File -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
+	
+	<div class="heading">
+		<h1>ROCK PAPER SCISSORS GAME</h1>
+	</div>
+	
+	<div class="twoChoices">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<h4>You</h4>
+					<img id="playerChoice">
+				</div>
+				<div class="col-lg-2">
+					<h2 id="result">VERSES</h2>
+					<br>
+				</div>
+				<div class="col-lg-5">
+					<h4>Computer</h4>
+					<img id="computerChoice">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="threePossibleChoices">
+		<div class="container">
+			<h3>CHOOSE YOUR MOVE</h3>
+			<hr>
+			<div class="row">
+				<div class="col-lg-4">
+					<button type="button" class="btn" onclick="checkResult(0)"><img id="rock" src="assets/rock.png"></button>
+				</div>	
+				<div class="col-lg-4">	
+					<button type="button" class="btn" onclick="checkResult(1)"><img id="paper" src="assets/paper.png"></button>
+				</div>	
+				<div class="col-lg-4">
+					<button type="button" class="btn" onclick="checkResult(2)"><img id="scissors" src="assets/scissors.png"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Link to Javascript File-->
+    <script type="text/javascript" src="javascript.js"></script>
+	
 </body>
 </html>
