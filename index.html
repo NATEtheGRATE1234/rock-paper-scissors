@@ -20,15 +20,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5">
-					<h4>You</h4>
+					<h4 id="you"><Y>YOU</Y></h4>
+					<h5 id="pC"> </h5>
 					<img id="playerChoice">
 				</div>
 				<div class="col-lg-2">
-					<h2 id="result">VERSES</h2>
+					<h4 id="result">VERSES</h4>
 					<br>
+					<span>Your score: <p id="playerScore"> </p></span>
+					<span>Computer's score: <p id="computerScore"> </p></span>
 				</div>
 				<div class="col-lg-5">
-					<h4>Computer</h4>
+					<h4 id="comp">COMPUTER</h4>
+					<h5 id="cC"> </h5>
 					<img id="computerChoice">
 				</div>
 			</div>
@@ -38,7 +42,7 @@
 	<div class="threePossibleChoices">
 		<div class="container">
 			<h3>CHOOSE YOUR MOVE</h3>
-			<hr>
+			<hr style="color: yellow">
 			<div class="row">
 				<div class="col-lg-4">
 					<button type="button" class="btn" onclick="checkResult(0)"><img id="rock" src="assets/rock.png"></button>

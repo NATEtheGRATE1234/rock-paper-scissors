@@ -1,3 +1,7 @@
+body {
+    background-color: black;    
+}
+
 img{
 	width: 15%;
 }
@@ -5,30 +9,133 @@ img{
 .heading {
     text-align: center;
     padding-top: 40px;
+    -webkit-animation:colorchange 13s infinite alternate;
 }
 
+@-webkit-keyframes colorchange {
+  0% {
+
+    color: blue;
+  }
+
+  10% {
+
+    color: yellow;
+  }
+
+  20% {
+
+    color: pink;
+  }
+
+  30% {
+
+    color: #d35400;
+  }
+
+  40% {
+
+    color: blue;
+  }
+
+  50% {
+
+    color: #34495e;
+  }
+
+  60% {
+
+    color: blue;
+  }
+
+  70% {
+
+    color: green;
+  }
+  80% {
+
+    color: #f1c40f;
+  }
+
+  90% {
+
+    color: #2980b9;
+  }
+
+  100% {
+
+    color: pink;
+  }
+}
 .twoChoices {
     text-align: center;
     padding-top: 100px;
 }
 
+
+/* THREE POSSIBLE CHOICES */
+.threePossibleChoices h3 {
+    color: #9d159d;
+}
+
 .threePossibleChoices {
-    padding-top: 160px;
+    padding-top: 90px;
     text-align: center;
 }
 
 .threePossibleChoices img {
-    width: 180px;
-    height: 200px;
+    width: 130px;
+    height: 150px;
 }
 
 
 .threePossibleChoices img:hover {
-    width: 190px;
-    height: 210px;
+    width: 150px;
+    height: 170px;
     transition: all 600ms ease-in-out;
 }
 
-.threePossibleChoices btn {
+.threePossibleChoices btn:hover {
     background: hidden;
+    border: none;
+}
+
+.threePossibleChoices img {
+    background: hidden;
+}
+/* END THREE POSSIBLE CHOICES */
+
+#you {
+    color: #1aff1a;
+}
+
+#comp {
+    color: #ca1cca;
+}
+
+#result  {
+    color: white;
+}
+
+#computerScore {
+    color: white;
+}
+
+#playerScore {
+    color: white;
+}
+
+.twoChoices span {
+    color: white;
+}
+
+#pC {
+    color: white;
+}
+
+#cC {
+    color: white;
+}
+hr {
+    background-color: yellow;
 }
